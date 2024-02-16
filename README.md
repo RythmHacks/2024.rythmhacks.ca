@@ -3,5 +3,5 @@ RythmHacks 2024 landing page.
 
 ## Setup Instructions
 1. Clone the repository
-Type `npm i` to install dependencies
-Write some code and run `npm start` to start the web app
+2. Type `npm i` to install dependencies
+3. Write some code and run `npm start` to start the web app
