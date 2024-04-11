@@ -8,7 +8,7 @@ const Landing = () => {
                 <div className="z-10">
                     <h1 className="text-gray-400 text-8xl font-semibold">
                         Experience the{" "}
-                        <div className="pb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#2B7FA3] from-22% to-[#C95FFB]">
+                        <div className="pb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#2B7FA3] from-22% to-[#C95FFB]">
                             magic of tech
                         </div>
                     </h1>
