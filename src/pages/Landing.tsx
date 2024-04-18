@@ -1,8 +1,11 @@
 import "./Landing.scss";
+import Navbar from "../components/Navbar/Navbar";
 
 const Landing = () => {
     return (
         <main>
+            <Navbar />
+            
             <section className="splash flex justify-center items-center h-dvh text-center">
                 <div className="bg absolute size-full" />
                 <div className="z-10">
