@@ -1,11 +1,12 @@
 import "./Landing.scss";
 import Navbar from "../components/Navbar/Navbar";
+import Team from "../components/Team/Team";
 
 const Landing = () => {
     return (
         <main>
             <Navbar />
-            
+
             <section className="splash flex justify-center items-center h-dvh text-center">
                 <div className="bg absolute size-full" />
                 <div className="z-10">
@@ -18,6 +19,7 @@ const Landing = () => {
                     <h2 className="font-light text-4xl mt-6">JUNE, WATERLOO</h2>
                 </div>
             </section>
+            <Team />
         </main>
     );
 };
