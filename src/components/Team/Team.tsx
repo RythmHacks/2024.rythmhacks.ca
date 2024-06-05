@@ -98,7 +98,7 @@ const Team: FunctionComponent = () => {
     const [index, setIndex] = useState(0);
 
     return (
-        <section>
+        <section id="team">
             <h2 className="text-center text-3xl">Meet the Team!</h2>
             <div className="grid grid-cols-[2fr,1fr] mt-4 p-16">
                 <div className="relative">
