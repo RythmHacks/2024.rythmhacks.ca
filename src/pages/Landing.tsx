@@ -1,6 +1,6 @@
 import "./Landing.scss";
 import Navbar from "../components/Navbar/Navbar";
-
+import Sponsor from "../components/Sponsors/Sponsors";
 const Landing = () => {
     return (
         <main>
@@ -18,6 +18,10 @@ const Landing = () => {
                     <h2 className="font-light text-4xl mt-6">JUNE, WATERLOO</h2>
                 </div>
             </section>
+            <section id="sponsors">
+                <Sponsor/>     
+            </section>
+                   
         </main>
     );
 };
