@@ -12,10 +12,8 @@ import {
 } from "framer-motion";
 
 import { wrap } from "@motionone/utils";
-import capybara from '../../assets/capybara.jpg';
-import capybara75 from '../../assets/capybara75.jpg';
-import capybara50 from '../../assets/capybara50.jpg';
-import capybara25 from '../../assets/capybara25.jpg';
+import windscribe from '../../assets/windscribe.png';
+
 
 
 
@@ -35,8 +33,8 @@ function ParallaxImages({ images, baseVelocity = 100 }: ParallaxProps) {
   const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
     clamp: false
   });
-
-  const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
+  // its this that cauases the jumping 
+  const x = useTransform(baseX, (v) => `${wrap(-532, 0, v)}px`);
 
   const directionFactor = useRef<number>(1);
   useAnimationFrame((t, delta) => {
@@ -67,46 +65,20 @@ function ParallaxImages({ images, baseVelocity = 100 }: ParallaxProps) {
 export default function Sponsors() {
 
   const images2 = [
-    capybara75,
-    capybara75,
-    capybara75,
-    capybara75
-  ];
-
-  const images3 = [
-    capybara50,
-    capybara50,
-    capybara50,
-    capybara50,
-    capybara50,
-    capybara50,
-    capybara50,
-    capybara50
-  ];
-
-  const images4 = [
-    capybara25,
-    capybara25,
-    capybara25,
-    capybara25,
-    capybara25,
-    capybara25,
-    capybara25,
-    capybara25,
-    capybara25,
-    capybara25,
-    capybara25,
-    capybara25,
-    capybara25,
-    capybara25,
-    capybara25
+    windscribe,
+    windscribe,
+    windscribe,
+    windscribe
   ];
 
   return (
     <section>
-      <ParallaxImages baseVelocity={5} images={images2} />
-      <ParallaxImages baseVelocity={-5} images={images3} />
-      <ParallaxImages baseVelocity={5} images={images4} />
+      <div className="flex items-center justify-center h-full z-10 pb-8">
+        <h1 className="text-gray-400 text-5xl font-semibold">
+          Our Sponsors
+        </h1>
+      </div>
+      <ParallaxImages baseVelocity={200} images={images2} />
     </section>
   );
 }
