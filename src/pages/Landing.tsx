@@ -1,5 +1,6 @@
 import "./Landing.scss";
 import Navbar from "../components/Navbar/Navbar";
+import Sponsor from "../components/Sponsors/Sponsors";
 import { useEffect, useState } from "react";
 
 const Landing = () => {
@@ -68,6 +69,9 @@ const Landing = () => {
                         />
                     </form>
                 </div>
+            </section>
+            <section id="sponsors">
+                <Sponsor />
             </section>
         </main>
     );

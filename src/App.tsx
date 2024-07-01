@@ -5,11 +5,13 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <Landing />,
-    },
+    },    
 ]);
 
 function App() {
-    return <RouterProvider {...{ router }} />;
+    return (
+        <RouterProvider router={router} />
+    );
 }
 
 export default App;
