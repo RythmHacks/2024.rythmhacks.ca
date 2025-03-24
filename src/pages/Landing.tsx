@@ -25,7 +25,7 @@ const Landing = () => {
                             magic of tech
                         </div>
                     </h1>
-                    <h2 className="font-light text-4xl mt-6">SEPTEMBER, WATERLOO</h2>
+                    <h2 className="font-light text-4xl mt-6">SEPTEMBER 2025</h2>
                     <form
                         className="mt-8"
                         onSubmit={async (e) => {
